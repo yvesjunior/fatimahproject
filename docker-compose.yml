@@ -5,7 +5,7 @@ services:
       container_name: fatimaproject
       build: ./infra/web
       volumes:
-          - "${WEB_SRC_FOLDER}:/var/www/app"
+          - "${WEB_SRC_FOLDER}:/var/www/html"
       ports:
           -  "${WEB_PORT}:80"
       network_mode: bridge
