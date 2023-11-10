@@ -141,45 +141,46 @@
                         <div class="section-title mb-45">
                             <h3>Become a <span>volunteer</span></h3>
                         </div>
-                        <form action="#" class="volunteer-form">
+                        <form id="becomevoluntierform0"  method="post" action="sendgrid/becomevoluntier.php" >
                             <div class="row">
                                 <div class="col-xl-9 mb-10">
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="name">Your Name</label>
-                                        <input type="text" id="name" name="name" class="form-control" value=""
+                                        <label for="your-name">Your Name</label>
+                                        <input type="text" id="your-name" name="your-name" class="form-control" value=""
                                             placeholder="Your Name" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="email">Your Email</label>
-                                        <input type="email" id="email" name="email" class="form-control" value=""
+                                        <label for="your-email">Your Email</label>
+                                        <input type="your-email" id="your-email" name="your-email" class="form-control" value=""
                                             placeholder="Email Address" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="phone_number">Phone Number</label>
-                                        <input type="text" id="phone_number" name="phone_number" class="form-control"
+                                        <label for="your-phone">Phone Number</label>
+                                        <input type="tel" id="your-phone" name="your-phone" class="form-control"
                                             value="" placeholder="Phone Number">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="birth-day">Date Of Birth</label>
-                                        <input type="date" id="birth-day" name="birth-day" class="form-control"
+                                        <input type="date" name="birth-day" class="form-control"
                                             value="">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" class="form-control" rows="2"
+                                        <label for="your-message">Message</label>
+                                        <textarea name="your-message" id="your-message" class="form-control" rows="2"
                                             placeholder="Write Your Messages" required></textarea>
                                     </div>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LcYXeofAAAAACdvOPye5G2J15CpxsrbCAv7aGEs"></div>
                                 <div class="col-md-12">
                                     <div class="form-group pt-10 mb-0">
                                         <button type="submit" class="btn ml-5">Send us a message</button>
