@@ -32,6 +32,9 @@ RUN cp /dev/null ${APACHE_CONF_DIR}/conf-available/other-vhosts-access-log.conf 
     && a2enmod rewrite php8.2 
     # PHP settings
 RUN phpenmod mcrypt 
+
+RUN curl -sS https://getcomposer.org/installer | php -- --version=2.7.2 --install-dir=/usr/local/bin --filename=composer 
+
 RUN apt-get purge -y --auto-remove $BUILD_DEPS \
 	&& apt-get autoremove -y \
 	&& rm -rf /var/lib/apt/lists/* \
@@ -41,7 +44,7 @@ RUN apt-get purge -y --auto-remove $BUILD_DEPS \
     && chown www-data:www-data ${PHP_DATA_DIR} -Rf
 
 RUN apt-get update -y 
-RUN apt-get install sendmail -y
+# RUN apt-get install sendmail -y
 
 RUN a2enmod ssl
 
