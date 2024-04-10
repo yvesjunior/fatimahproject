@@ -11,7 +11,7 @@ $( "#becomevoluntierform0" ).submit(function( event ) {
 
 	posting.done(function( data ) {
 		$( "#becomevoluntierform0" ).trigger('reset');
-		alert(data)
+		alert("success");
 	});
 
 });
@@ -29,7 +29,7 @@ $( "#contactform0" ).submit(function( event ) {
 
 	posting.done(function( data ) {
 		$( "#contactform0" ).trigger('reset');
-		alert(data)
+		alert("success");
 	});
 
 });
