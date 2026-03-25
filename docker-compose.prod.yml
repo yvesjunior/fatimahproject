@@ -24,7 +24,7 @@ services:
     restart: always
 
   db:
-    image: mariadb:10.11
+    image: mysql:8.0
     container_name: fatimaproject_db_prod
     volumes:
       - db_data:/var/lib/mysql
@@ -35,10 +35,11 @@ services:
       - MYSQL_USER=${DB_USERNAME}
       - MYSQL_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 10
+      start_period: 30s
     restart: always
 
 volumes:

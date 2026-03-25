@@ -17,13 +17,14 @@ DB_PASS="changeme"
 DB_ROOT_PASS="rootchangeme"
 APP_PORT="80"
 APP_URL="http://localhost"
-APP_KEY="base64:o34i6XymJAqn2YcTn7w3ZD2+SX+6kzkjCsymfXVWmFs="
+APP_KEY=""
 
 # --- Parse arguments ---
 while [[ $# -gt 0 ]]; do
     case $1 in
         --db-pass) DB_PASS="$2"; shift 2;;
         --db-root-pass) DB_ROOT_PASS="$2"; shift 2;;
+        --app-key) APP_KEY="$2"; shift 2;;
         --app-url) APP_URL="$2"; shift 2;;
         --port) APP_PORT="$2"; shift 2;;
         --load-image) LOAD_IMAGE=true; shift;;
@@ -44,6 +45,11 @@ while [[ $# -gt 0 ]]; do
         *) echo "Unknown option: $1"; exit 1;;
     esac
 done
+
+if [ -z "$APP_KEY" ]; then
+    echo "ERROR: --app-key is required (generate with: php artisan key:generate --show)"
+    exit 1
+fi
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
