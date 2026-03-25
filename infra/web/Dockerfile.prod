@@ -2,7 +2,9 @@ FROM php:8.4-apache AS base
 LABEL org.opencontainers.image.authors="yvesjuniorbationo@gmail.com"
 
 # Install PHP extensions
-RUN apt-get update && apt-get install -y \
+RUN rm -f /etc/apt/apt.conf.d/docker-clean
+RUN apt-get update
+RUN apt-get install -y \
         libicu-dev \
         libzip-dev \
         libpng-dev \
@@ -10,18 +12,10 @@ RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libpq-dev \
         libxml2-dev \
-        unzip \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install \
-        intl \
-        zip \
-        gd \
-        pdo_mysql \
-        pdo_pgsql \
-        bcmath \
-        xml \
-        opcache \
-    && rm -rf /var/lib/apt/lists/*
+        unzip
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+RUN docker-php-ext-install intl zip gd pdo_mysql pdo_pgsql bcmath xml opcache
+RUN rm -rf /var/lib/apt/lists/*
 
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
