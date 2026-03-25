@@ -1,0 +1,76 @@
+FROM php:8.4-apache AS base
+LABEL org.opencontainers.image.authors="yvesjuniorbationo@gmail.com"
+
+# Install PHP extensions
+RUN apt-get update && apt-get install -y \
+        libicu-dev \
+        libzip-dev \
+        libpng-dev \
+        libjpeg-dev \
+        libfreetype6-dev \
+        libpq-dev \
+        libxml2-dev \
+        unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install \
+        intl \
+        zip \
+        gd \
+        pdo_mysql \
+        pdo_pgsql \
+        bcmath \
+        xml \
+        opcache \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Composer
+COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
+
+# Apache settings
+RUN a2enmod rewrite headers
+
+# ---------- Build stage: install dependencies ----------
+FROM base AS build
+
+WORKDIR /var/www/html
+COPY ./src/web/data/composer.json ./src/web/data/composer.lock ./
+RUN composer install --no-dev --no-scripts --no-interaction --prefer-dist --optimize-autoloader
+
+COPY ./src/web/data/ .
+COPY ./src/web/data/.env.production .env
+RUN composer dump-autoload --optimize --no-dev
+
+# ---------- Production stage ----------
+FROM base AS production
+
+# Apache config
+COPY ./infra/web/configs/app.conf /etc/apache2/sites-available/000-default.conf
+RUN a2ensite 000-default
+
+# PHP production config
+COPY ./infra/web/configs/php.prod.ini /usr/local/etc/php/conf.d/custom.ini
+
+# Entrypoint
+COPY ./infra/web/entrypoint.prod.sh /sbin/entrypoint.sh
+RUN chmod 755 /sbin/entrypoint.sh
+
+# Application code
+WORKDIR /var/www/html
+COPY --from=build /var/www/html /var/www/html
+
+# Ensure storage directories exist
+RUN mkdir -p storage/app/public/portfolio \
+    storage/framework/cache/data \
+    storage/framework/sessions \
+    storage/framework/views \
+    storage/logs \
+    bootstrap/cache
+
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 775 /var/www/html/storage \
+    && chmod -R 775 /var/www/html/bootstrap/cache
+
+EXPOSE 80
+
+CMD ["/sbin/entrypoint.sh"]

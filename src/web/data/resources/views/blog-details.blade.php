@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fatimah Project Mission| Blog Details</title>
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/magnific.min.css">
+    <link rel="stylesheet" href="assets/css/spacing.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class='sc5'>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- navbar start -->
+    <div class="navbar-top pt-15 pb-10 bgc-black navtop--one">
+        <div class="container">
+            <div class="navtop-inner">
+                <ul class="topbar-left">
+                    
+                </ul>
+                <ul class="topbar-right">
+                    <li class="social-area">
+                        <span>Follow Us - </span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar py-30 navbar--one navbar-area navbar-expand-lg">
+        <div class="container nav-container navbar-bg">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#Iitechie_main_menu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="assets/img/logos/logo.png" alt="img"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="Iitechie_main_menu">
+                <ul class="navbar-nav menu-open text-lg-end">
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+
+
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/volunteers">Volunteers</a></li>
+                            <li><a href="/become-volunteers">Become Volunteer</a></li>
+                            <li><a href="/faqs">FAQ Page</a></li>
+                            <li><a href="/404">404 Error</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav-right-part nav-right-part-desktop">
+                <div class="dropdown">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <a class="btn btn--style-two" href="/donate">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <!-- page banner start -->
+    <div class="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
+        style="background-image: url(assets/img/background/page-banner.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h2 class="page-title">Gone to ghana voluntering in africa</h2>
+                        <ul class="page-list">
+                            <li><a href="/">Home</a></li>
+                            <li>Blog Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page banner end -->
+
+
+    <!-- Blog Details area start -->
+    <div class="blog-details-area py-120">
+        <div class="container">
+            <div class="row gap-60">
+                <div class="col-lg-8">
+                    <div class="blog-details-content mb-55">
+                        <div class="details-image rel mb-35">
+                            <img src="assets/img/blog/blog-clasic1.jpg" alt="Blog Clasic">
+                            <div class="post-date">
+                                <b>13</b>
+                                <span>dec</span>
+                            </div>
+                        </div>
+                        <ul class="blog-meta">
+                            <li><i class="flaticon-user"></i> <a href="#">Wade Warren</a></li>
+                            <li><i class="flaticon-bubble-chat"></i> <a href="#">05 Comment</a></li>
+                        </ul>
+                        <p>You’ve switched your charity’s office to renewable energy. You’ve cut most flights. The
+                            office fridge is stacked high with oat milk, and lycra-clad staff are proudly showing off
+                            their subsidised bicycles. On your way to net-zero, right? But operational emissions are
+                            just one part of the net-zero picture: your money, too, has a carbon cost attached.</p>
+                        <p>Cras varius. Donec vitae orci sed dolor rutrum auctor. Fusce egestas elit eget lorem.
+                            Suspendisse nisl elit, rhoncus eget elementum acondimentum eget, diam. Nam at tortor in
+                            tellus interdum sagitliquam lobortis. Donec orci lectus, aliquam ut, faucibus non, euismod
+                            id, nulla. Curabitur blandit mollis lacus. Nam adipiscing. Vestibulum eu odio. Vivamus
+                            laoreet. rem available market standard dummy text available market industry Lorem Ipsum
+                            simply dummy text of free available market.There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration</p>
+                        <blockquote>
+                            <div class="quote-icon"><i class="flaticon-quote"></i></div>
+                            Donec interdum metus hendrerit dolor <br>Wiam sagittis ligula egestas.
+                        </blockquote>
+                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                            pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                            nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                            Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p><br>
+                        <h5>Pelhabita morbi tristique</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus etmagnis disparturient montesnascetur ridiculus
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa quis enim. Donec pede justo, fringilla vel aliquet nec, vulputate eget, arcu. In enim
+                            justo rhoncus utimperdiet a venenatis vitae justo.</p>
+                        <div class="row pb-25">
+                            <div class="col-md-5 col-sm-6">
+                                <ul class="list-style-two">
+                                    <li>Kam adipiscin estibulum</li>
+                                    <li>Kam adipiscin estibulum</li>
+                                    <li>Volenteer</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5 col-sm-6">
+                                <ul class="list-style-two">
+                                    <li>Food help for african people</li>
+                                    <li>Suport Homeless people</li>
+                                    <li>Donation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="tag-and-share">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <div class="tags">
+                                        <strong>Tag : </strong>
+                                        <a href="#">Charity</a>
+                                        <a href="#">Donation</a>
+                                        <a href="#">Homeless</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-md-end">
+                                    <div class="share-area">
+                                        <strong>Share: </strong>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <h4>02 Comment</h4>
+                    <div class="blog-comment pt-25 pb-30">
+                        <ul class="comment-list">
+                            <li class="comment">
+                                <div id="div-comment-12" class="comment-body">
+                                    <footer class="comment-meta">
+                                        <div class="comment-author vcard">
+                                            <img class="avatar" alt="Author" src="assets/img/blog/comment-author1.jpg">
+                                            <b class="fn"><a href="#" rel="external nofollow ugc" class="url">Leslie
+                                                    Alexander</a></b>
+                                        </div>
+                                        <div class="comment-metadata">
+                                            <a href="#">10 Hours ago</a>
+                                        </div>
+                                    </footer>
+                                    <div class="comment-content">
+                                        <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo
+                                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etmagnis
+                                            disparturient montesnascetur ridiculus mus. Donec quam felis ultricies nec
+                                            pellentesque </p>
+                                    </div>
+                                    <div class="reply">
+                                        <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment">
+                                <div id="div-comment-13" class="comment-body">
+                                    <footer class="comment-meta">
+                                        <div class="comment-author vcard">
+                                            <img class="avatar" alt="Author" src="assets/img/blog/comment-author2.jpg">
+                                            <b class="fn"><a href="#" rel="external nofollow ugc" class="url">Savannah
+                                                    Nguyen</a></b>
+                                        </div>
+                                        <div class="comment-metadata">
+                                            <a href="#">01 Day ago</a>
+                                        </div>
+                                    </footer>
+                                    <div class="comment-content">
+                                        <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo
+                                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus etmagnis
+                                            disparturient montesnascetur ridiculus mus. Donec quam felis ultricies nec
+                                            pellentesque </p>
+                                    </div>
+                                    <div class="reply">
+                                        <a rel="nofollow" class="comment-reply-link" href="#">Reply</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="blog-comment-form form-style-two">
+                        <form action="#" class="comment-form">
+                            <div class="row">
+                                <div class="col-xl-12 mb-5">
+                                    <h4>Leave a Comment</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" id="name" name="name" class="form-control" value=""
+                                            placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" id="email" name="email" class="form-control" value=""
+                                            placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" class="form-control" rows="5"
+                                            placeholder="Write Your Messages" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group pt-5">
+                                        <input type="checkbox" required id="conditions">
+                                        <label class="ms-2" for="conditions">Save my name, email, and website in this
+                                            browser for the next time I comment.</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group pt-10 mb-0">
+                                        <button type="submit" class="btn ml-5">Post Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="main-sidebar rmt-75">
+                        <div class="widget widget_search">
+                            <h5 class="widget-title">Search Causes</h5>
+                            <form class="search-form">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Search key word" required>
+                                </div>
+                                <button class="submit-btn" type="submit"><i
+                                        class="flaticon-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="widget widget_catagory">
+                            <h5 class="widget-title">News Categories</h5>
+                            <ul class="catagory-items">
+                                <li><a href="/blog">Foods for homeless Child</a></li>
+                                <li><a href="/blog">African People</a></li>
+                                <li><a href="/blog">Education all poor child</a></li>
+                                <li><a href="/blog">Upcoming news about event</a></li>
+                                <li><a href="/blog">Downation for help</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget widget-recent-post">
+                            <h4 class="widget-title">Recent News</h4>
+                            <ul>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="assets/img/widgets/post1.jpg" alt="Post">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="title"><a href="/blog-details">Desktop publishing sotware
+                                                    like aldus page</a></h6>
+                                            <ul class="post-info">
+                                                <li><i class="flaticon-time"></i> <a href="#">12 Dec, 2022</a></li>
+                                                <li><i class="fas fa-user"></i> <a href="#">Robert Fox</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="assets/img/widgets/post2.jpg" alt="Post">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="title"><a href="/blog-details">Desktop publishing sotware
+                                                    like aldus page</a></h6>
+                                            <ul class="post-info">
+                                                <li><i class="flaticon-time"></i> <a href="#">12 Dec, 2022</a></li>
+                                                <li><i class="fas fa-user"></i> <a href="#">Robert Fox</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="assets/img/widgets/post3.jpg" alt="Post">
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="title"><a href="/blog-details">Desktop publishing sotware
+                                                    like aldus page</a></h6>
+                                            <ul class="post-info">
+                                                <li><i class="flaticon-time"></i> <a href="#">12 Dec, 2022</a></li>
+                                                <li><i class="fas fa-user"></i> <a href="#">Robert Fox</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                   
+                        <div class="widget widget_cta">
+                            <div class="cta-widget-inner" style="background-image: url(assets/img/widgets/cta-bg.jpg);">
+                                <h5>We have provided financial help to 5 million people</h5>
+                                <a class="btn ml-5" href="/donate">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Details area end -->
+
+
+    <!-- footer area start -->
+    <footer class="footer-area overlay text-white pt-120 bgs-cover"
+        style="background-image: url('assets/img/footer/footer-bg.jpg');">
+
+        <div class="footer-bottom mt-50">
+            <div class="container">
+                <div class="footer-bottom__inner">
+                    <div class="donate-by">
+                        <span>Donate by :</span>
+                        <img src="assets/img/footer/donate-by.png" alt="Donate By">
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright 2022 All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,11 @@
 .DS_Store
+.idea/
+.claude/
+src/web/data/vendor/
+src/web/data/node_modules/
+src/web/data/.env
+src/web/data/.env.production
+src/web/data/storage/*.key
+src/web/data/database/database.sqlite
+*.tar.gz
+fatimaproject_db.sql

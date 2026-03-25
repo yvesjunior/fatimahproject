@@ -1,0 +1,12 @@
+.git
+.idea
+.claude
+.DS_Store
+src/web/data/vendor
+src/web/data/node_modules
+src/web/data/.env
+src/web/data/storage/logs/*
+src/web/data/storage/framework/cache/*
+src/web/data/storage/framework/sessions/*
+src/web/data/storage/framework/views/*
+src/web/data/database/database.sqlite

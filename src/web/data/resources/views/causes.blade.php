@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fatimah Project Mission| Causes</title>
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/magnific.min.css">
+    <link rel="stylesheet" href="assets/css/spacing.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class='sc5'>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- navbar start -->
+    <div class="navbar-top pt-15 pb-10 bgc-black navtop--one">
+        <div class="container">
+            <div class="navtop-inner">
+                <ul class="topbar-left">
+                    
+                </ul>
+                <ul class="topbar-right">
+                    <li class="social-area">
+                        <span>Follow Us - </span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar py-30 navbar--one navbar-area navbar-expand-lg">
+        <div class="container nav-container navbar-bg">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#Iitechie_main_menu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="assets/img/logos/logo.png" alt="img"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="Iitechie_main_menu">
+                <ul class="navbar-nav menu-open text-lg-end">
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+
+
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/volunteers">Volunteers</a></li>
+                            <li><a href="/become-volunteers">Become Volunteer</a></li>
+                            <li><a href="/faqs">FAQ Page</a></li>
+                            <li><a href="/404">404 Error</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav-right-part nav-right-part-desktop">
+                <div class="dropdown">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <a class="btn btn--style-two" href="/donate">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <!-- page banner start -->
+    <div class="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
+        style="background-image: url(assets/img/background/page-banner.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="breadcrumb-inner text-center">
+                        <h2 class="page-title">Our Causes</h2>
+                        <ul class="page-list">
+                            <li><a href="/">Home</a></li>
+                            <li>Causes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page banner end -->
+
+
+    <!-- Our cause area start -->
+    <div class="our-cause-page py-120 rel z-1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two1.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress one">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Water For All Children</a></h4>
+                            <div class="cause-price">
+                                <span>Raised : $87,689</span>
+                                <span>Goal : $87,689</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item cause-yellow">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two2.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress two">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Clean Education Help</a></h4>
+                            <div class="cause-price cause-price--yellow">
+                                <span>Raised : $95,752</span>
+                                <span>Goal : $100,752</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn btn--yellow" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item cause-green">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two3.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress three">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">The Right of Childen</a></h4>
+                            <div class="cause-price cause-price--green">
+                                <span>Raised : $100,587</span>
+                                <span>Goal : $200,587</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn btn--green" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two4.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress one">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Action Against Poverty</a></h4>
+                            <div class="cause-price">
+                                <span>Raised : $784,689</span>
+                                <span>Goal : $1547,689</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item cause-yellow">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two5.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress two">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Help The Ecosystems</a></h4>
+                            <div class="cause-price cause-price--yellow">
+                                <span>Raised : $60,000</span>
+                                <span>Goal : $100,752</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn btn--yellow" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item cause-green">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two6.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress three">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Winter Survival Pack</a></h4>
+                            <div class="cause-price cause-price--green">
+                                <span>Raised : $500,650</span>
+                                <span>Goal : $3578,358</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn btn--green" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two7.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress one">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Food for Refugees</a></h4>
+                            <div class="cause-price">
+                                <span>Raised : $120,245</span>
+                                <span>Goal : $247,874</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item cause-yellow">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two8.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress two">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Childhood Development</a></h4>
+                            <div class="cause-price cause-price--yellow">
+                                <span>Raised : $547,245</span>
+                                <span>Goal : $721,578</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn btn--yellow" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="cause-two-item cause-green">
+                        <div class="image">
+                            <img src="assets/img/causes/cause-two9.jpg" alt="Cause">
+                        </div>
+                        <div class="content">
+                            <div class="circle-progress three">
+                                <b>0</b>
+                            </div>
+                            <h4><a href="/cause-details">Much Needed Help</a></h4>
+                            <div class="cause-price cause-price--green">
+                                <span>Raised : $357,250</span>
+                                <span>Goal : $478,147</span>
+                            </div>
+                            <p>There are many variations of passages of orem Ipsum available, but the majority have</p>
+                            <div class="cause-btn">
+                                <a class="btn btn--green" href="#">Donation now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination pt-20">
+                <a class="prev page-numbers" href="#"><i class="flaticon-left-chevron"></i></a>
+                <a class="page-numbers" href="#">1</a>
+                <span class="page-numbers current">2</span>
+                <a class="page-numbers" href="#">3</a>
+                <a class="page-numbers" href="#">4</a>
+                <span class="page-numbers"><i class="fa fa-ellipsis-h"></i></span>
+                <a class="next page-numbers" href="#"><i class="flaticon-chevron"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Our cause area end -->
+
+
+    <!-- Client Logo area start -->
+    <div class="client-logo-area py-75"
+        style="background-image: url(assets/img/client-logo/client-logo-section-bg.jpg);">
+        <div class="container">
+            <div class="client-logo-wrap">
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo1.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo2.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo3.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo4.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo5.png" alt="Client Logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Client Logo area end -->
+
+
+    <!-- footer area start -->
+    <footer class="footer-area overlay text-white pt-120 bgs-cover"
+        style="background-image: url('assets/img/footer/footer-bg.jpg');">
+
+        
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

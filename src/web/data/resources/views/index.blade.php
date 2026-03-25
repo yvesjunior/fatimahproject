@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fatimah Project Mission</title>
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/magnific.min.css">
+    <link rel="stylesheet" href="assets/css/spacing.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class='sc5'>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- navbar start -->
+    <div class="navbar-top pt-15 pb-10 bgc-black navtop--one">
+        <div class="container">
+            <div class="navtop-inner">
+                <ul class="topbar-left">
+                    
+                </ul>
+                <ul class="topbar-right">
+                    <li class="social-area">
+                        <span>Follow Us - </span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar py-30 navbar--one navbar-area navbar-expand-lg">
+        <div class="container nav-container navbar-bg">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#Iitechie_main_menu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="assets/img/logos/logo.png" alt="img"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="Iitechie_main_menu">
+                <ul class="navbar-nav menu-open text-lg-end">
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/become-volunteers">Volunteer</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio">Our Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right-part nav-right-part-desktop">
+                <div class="dropdown">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <a class="btn btn--style-two" href="/contact">Support Our Mission Today</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Area start -->
+    <div class="hero-area bgs-cover overlay pt-155 pb-170" style="background-image: url(assets/img/hero/hero.jpg);">
+        <div class="container container-1370">
+            <div class="hero-content text-center text-white">
+                <h1>Transforming Lives, <span>One Woman</span> at a Time </h1>
+                <!-- <p>Only when the society comes together and contributes.</p> -->
+                
+            </div>
+        </div>
+    </div>
+    <!-- Hero Area end -->
+
+
+    <!-- Urgent cause area start -->
+    <div class="urgent-cause-area overlay bgs-cover pt-120 pb-90 rel z-1"
+        style="background-image: url(assets/img/causes/urgent-causes.jpg);">
+        <div class="container container-1370">
+            <div class="row gap-40">
+                <div class="">
+                    <div class="urgent-cause-content mb-30 rmb-65">
+                        <div class="section-title mb-30">
+                            <!-- <span class="section-title__subtitle mb-30">Your journey with us starts here</span> -->
+                            <h3>Your journey 
+                                <span>with us</span> starts here</h3>
+                        </div>
+                        <p>Join the Fatimah Project in our unwavering commitment to empowering women and girls. Driven by our Christian faith, love, and the pursuit of equality, we are on a mission to build stronger communities through woman empowerment by providing housing, education, and restorative counseling for women. 
+
+                        </p>
+                        <a class="btn ml-5 mt-35" href="/become-volunteers">Discover How You Can Make a Difference</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="urgent-cause-shapes">
+            <img class="one top_image_bounce" src="assets/img/shapes/half-circle-with-dots.png" alt="Shape">
+            <img class="two left_image_bounce" src="assets/img/shapes/circle-with-line-red.png" alt="Shape">
+            <img class="three right_image_bounce" src="assets/img/shapes/circle-with-line-green.png" alt="Shape">
+        </div>
+    </div>
+    <!-- Urgent cause area end -->
+
+    <!-- FAQ area start -->
+    <div class="faq-area py-120">
+        <div class="container ">
+            <div class="row gap-100">
+                <div class="col-lg-6">
+                    <div class="faq-image-part">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="image">
+                                    <img src="assets/img/about/about1.jpg" alt="About">
+                                    <img class="shape one top_image_bounce"
+                                        src="assets/img/shapes/three-round-green.png" alt="Shape">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/img/about/about3.jpg" alt="About" style="border-radius: 15px;">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="image">
+                                    <img src="assets/img/about/about2.jpg" alt="About" style="border-radius: 15px;">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/img/about/about4.jpg" alt="About" style="border-radius: 15px;">
+                                    <img class="shape two right_image_bounce"
+                                        src="assets/img/shapes/three-round-red.png" alt="Shape">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div class="col-lg-6">
+                    <div class="faq-content-part mt-20 rmt-65">
+                        <div class="section-title mb-45">
+                            <span class="section-title__subtitle mb-10">Let's Connect</span>
+                            <!-- <h2>How can we <span>help you?</span></h2> -->
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem obcaecati
+                                consectetur adipisicing</p> -->
+                        </div>
+                        <div class="faq-accordion-two" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingThree">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Support Our Cause
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Your support can change lives. Whether you're inspired to donate, volunteer your time, or spread the word, every action contributes to our mission. 
+                                        Together, we can make a lasting impact on the lives of women and girls in need.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Upcoming Events 
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Join our community of changemakers at our next event. From empowering workshops to community fundraisers, there's always a way to get involved and support our cause. 
+                                        Stay updated on upcoming events and find out how you can participate.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ area end -->
+
+
+    <!-- Call to action area start -->
+    <div class="cta-area overlay bgs-cover pt-110 rpt-120 pb-120"
+        style="background-image: url(assets/img/background/cta.jpg);">
+        <div class="container container-1170">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10">
+                    <div class="section-title text-center text-white">
+                        <h2>Transforming Lives, <span>One Woman</span> at a Time </h2>
+                        
+                        <a class="btn mt-30" href="/contact">Support Our Mission Today.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call to action area end -->
+
+
+    <!-- Client Logo area start -->
+    <div class="client-logo-area bgc-lighter py-30">
+        <div class="container">
+            <div class="client-logo-wrap">
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo1.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo2.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo3.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo4.png" alt="Client Logo"></a>
+                </div>
+                <div class="client-logo-item">
+                    <a href="#"><img src="assets/img/client-logo/client-logo5.png" alt="Client Logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Client Logo area end -->
+
+
+    <!-- footer area start -->
+    <footer class="footer-area overlay text-white pt-120 bgs-cover"
+    style="background-image: url('assets/img/footer/footer-bg.jpg');">
+
+ 
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fatimah Project Mission| 404 Erro</title>
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/magnific.min.css">
+    <link rel="stylesheet" href="assets/css/spacing.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class='sc5'>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- navbar start -->
+    <div class="navbar-top pt-15 pb-10 bgc-black navtop--one">
+        <div class="container">
+            <div class="navtop-inner">
+                <ul class="topbar-left">
+                    
+                </ul>
+                <ul class="topbar-right">
+                    <li class="social-area">
+                        <span>Follow Us - </span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar py-30 navbar--one navbar-area navbar-expand-lg">
+        <div class="container nav-container navbar-bg">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#Iitechie_main_menu"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="assets/img/logos/logo.png" alt="img"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="Iitechie_main_menu">
+                <ul class="navbar-nav menu-open text-lg-end">
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+
+
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/volunteers">Volunteers</a></li>
+                            <li><a href="/become-volunteers">Become Volunteer</a></li>
+                            <li><a href="/faqs">FAQ Page</a></li>
+                            <li><a href="/404">404 Error</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav-right-part nav-right-part-desktop">
+                <div class="dropdown">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <a class="btn btn--style-two" href="/donate">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <!-- page banner start -->
+    <div class="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
+        style="background-image: url(assets/img/background/page-banner.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="breadcrumb-inner text-center">
+                        <h2 class="page-title">Error Page</h2>
+                        <ul class="page-list">
+                            <li><a href="/">Home</a></li>
+                            <li>404</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page banner end -->
+
+
+    <!-- 404 Error start -->
+    <div class="error-page-area py-120 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <img src="assets/img/404.png" alt="404 Error">
+                    <div class="section-title pt-55 mb-50">
+                        <h2>Opps! This page not fund</h2>
+                        <p>Page does not fund or some other error occured. Go to our Home page</p>
+                    </div>
+                    <a href="/" class="btn">Go to home page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 404 Error end -->
+
+
+    <!-- footer area start -->
+    <footer class="footer-area overlay text-white pt-120 bgs-cover"
+        style="background-image: url('assets/img/footer/footer-bg.jpg');">
+
+        
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
