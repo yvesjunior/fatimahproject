@@ -9,8 +9,8 @@ class PortfolioSeeder extends Seeder
 {
     public function run(): void
     {
-        // Seed portfolio items from existing images (1.jpg through 106.jpg)
-        for ($i = 1; $i <= 106; $i++) {
+        // Seed portfolio items from existing images (1.jpg through 99.jpg)
+        for ($i = 1; $i <= 99; $i++) {
             Portfolio::firstOrCreate(
                 ['image' => "portfolio/{$i}.jpg"],
                 [
