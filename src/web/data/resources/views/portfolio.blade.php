@@ -163,25 +163,9 @@
                         </div>
                     </div>
                 @empty
-                    {{-- Fallback: load images from folder like the original --}}
-                    <script>
-                        $( document ).ready(function() {
-                            for (var i = 1; i < 100; i++) {
-                                var src = '{{ asset('assets/img/portfolio') }}/' + i + '.jpg';
-                                $( ".gallery-img" ).append(
-                                    "<div class='col-xl-4 col-md-6 item'>" +
-                                        "<div class='portfolio-item' style='height: 320px;'>" +
-                                            "<a href='" + src + "' class='portfolio-lightbox'>" +
-                                                "<img src='" + src + "' alt='Gallery'>" +
-                                                "<div class='portfolio-item__over'><span class='details-btn'><i class='fa fa-search-plus'></i></span></div>" +
-                                            "</a>" +
-                                        "</div>" +
-                                    "</div>"
-                                );
-                            }
-                            $('.portfolio-lightbox').magnificPopup({ type: 'image', gallery: { enabled: true } });
-                        });
-                    </script>
+                    <div class="col-12 text-center">
+                        <p>No gallery images yet.</p>
+                    </div>
                 @endforelse
             </div>
         </div>
