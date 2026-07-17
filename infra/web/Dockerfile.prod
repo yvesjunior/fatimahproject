@@ -14,7 +14,7 @@ RUN apt-get install -y \
         libxml2-dev \
         unzip
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-RUN docker-php-ext-install intl zip gd pdo_mysql pdo_pgsql bcmath xml opcache
+RUN docker-php-ext-install intl zip gd pdo_pgsql bcmath xml opcache
 RUN rm -rf /var/lib/apt/lists/*
 
 # Install Composer

@@ -3,7 +3,10 @@ set -e
 
 # =============================================================
 # Fatimah Project Mission — Production Deployment Script
-# Run this on your Linux production server
+# Run this on your Linux production server.
+#
+# Production uses an EXTERNAL PostgreSQL database (managed instance
+# or Postgres running on the host VM) — there is no database container.
 # =============================================================
 
 echo "========================================="
@@ -11,36 +14,54 @@ echo " Fatimah Project Mission - Deploy"
 echo "========================================="
 
 # --- Config defaults ---
+DB_HOST="host.docker.internal"   # use this when Postgres runs on the host VM
+DB_PORT="5432"
 DB_NAME="fatimaproject"
 DB_USER="fatimaproject"
 DB_PASS="changeme"
-DB_ROOT_PASS="rootchangeme"
+DB_SSLMODE="prefer"
 APP_PORT="80"
 APP_URL="http://localhost"
+SESSION_DOMAIN=""
+APP_SOURCE_PATH="$(cd "$(dirname "$0")" && pwd)"
 APP_KEY=""
 
 # --- Parse arguments ---
 while [[ $# -gt 0 ]]; do
     case $1 in
+        --db-host) DB_HOST="$2"; shift 2;;
+        --db-port) DB_PORT="$2"; shift 2;;
+        --db-name) DB_NAME="$2"; shift 2;;
+        --db-user) DB_USER="$2"; shift 2;;
         --db-pass) DB_PASS="$2"; shift 2;;
-        --db-root-pass) DB_ROOT_PASS="$2"; shift 2;;
+        --db-sslmode) DB_SSLMODE="$2"; shift 2;;
         --app-key) APP_KEY="$2"; shift 2;;
         --app-url) APP_URL="$2"; shift 2;;
+        --session-domain) SESSION_DOMAIN="$2"; shift 2;;
+        --source-path) APP_SOURCE_PATH="$2"; shift 2;;
         --port) APP_PORT="$2"; shift 2;;
         --load-image) LOAD_IMAGE=true; shift;;
         --help)
             echo "Usage: ./deploy.sh [OPTIONS]"
             echo ""
             echo "Options:"
-            echo "  --db-pass PASSWORD       MariaDB password for app user (default: changeme)"
-            echo "  --db-root-pass PASSWORD  MariaDB root password (default: rootchangeme)"
+            echo "  --db-host HOST           PostgreSQL host (default: host.docker.internal)"
+            echo "  --db-port PORT           PostgreSQL port (default: 5432)"
+            echo "  --db-name NAME           Database name (default: fatimaproject)"
+            echo "  --db-user USER           Database user (default: fatimaproject)"
+            echo "  --db-pass PASSWORD       Database password (default: changeme)"
+            echo "  --db-sslmode MODE        PostgreSQL sslmode (default: prefer)"
+            echo "  --app-key KEY            Laravel APP_KEY (required)"
             echo "  --app-url URL            Public URL (default: http://localhost)"
+            echo "  --session-domain DOMAIN  Cookie domain (default: empty)"
+            echo "  --source-path PATH       Repo path mounted into the container (default: script dir)"
             echo "  --port PORT              Web port (default: 80)"
             echo "  --load-image             Load Docker image from fatimaproject-prod.tar.gz"
             echo ""
             echo "Examples:"
-            echo "  First deploy:  ./deploy.sh --db-pass secret123 --db-root-pass rootsecret --app-url https://example.com --load-image"
-            echo "  Restart:       ./deploy.sh --db-pass secret123 --app-url https://example.com"
+            echo "  First deploy:  ./deploy.sh --app-key base64:... --app-url https://example.com \\"
+            echo "                   --db-host 10.0.0.5 --db-pass secret123 --session-domain example.com --load-image"
+            echo "  Restart:       ./deploy.sh --app-key base64:... --app-url https://example.com --db-pass secret123"
             exit 0;;
         *) echo "Unknown option: $1"; exit 1;;
     esac
@@ -76,22 +97,23 @@ cat > .env <<ENVFILE
 WEB_PORT=${APP_PORT}
 APP_KEY=${APP_KEY}
 APP_URL=${APP_URL}
+SESSION_DOMAIN=${SESSION_DOMAIN}
+APP_SOURCE_PATH=${APP_SOURCE_PATH}
 
-DB_ROOT_PASSWORD=${DB_ROOT_PASS}
+DB_HOST=${DB_HOST}
+DB_PORT=${DB_PORT}
 DB_DATABASE=${DB_NAME}
 DB_USERNAME=${DB_USER}
 DB_PASSWORD=${DB_PASS}
+DB_SSLMODE=${DB_SSLMODE}
 ENVFILE
 echo "  Done."
 
-# --- Step 3: Start containers ---
+# --- Step 3: Start container ---
 echo ""
-echo "[3/3] Starting containers..."
-
-# Check if DB SQL file exists for initial import
-if [ ! -f fatimaproject_db.sql ]; then
-    echo "  WARNING: fatimaproject_db.sql not found. DB will start empty and migrations will create tables."
-fi
+echo "[3/3] Starting container..."
+echo "  Using external PostgreSQL at ${DB_HOST}:${DB_PORT} (db '${DB_NAME}')."
+echo "  Schema is created/updated automatically via 'php artisan migrate --force' on start."
 
 docker compose -f docker-compose.prod.yml down 2>/dev/null || true
 docker compose -f docker-compose.prod.yml up -d
@@ -111,5 +133,5 @@ echo "========================================="
 echo ""
 echo "IMPORTANT: Change the admin password after first login!"
 echo ""
-echo "To check logs:  docker logs fatimaproject"
+echo "To check logs:  docker logs fatimaproject_prod"
 echo "To stop:        docker compose -f docker-compose.prod.yml down"

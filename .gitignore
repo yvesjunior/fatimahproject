@@ -8,4 +8,6 @@ src/web/data/.env.production
 src/web/data/storage/*.key
 src/web/data/database/database.sqlite
 *.tar.gz
-fatimaproject_db.sql
+# Database dumps / backups (contain data + password hashes)
+*.sql
+/backups/

@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install -y \
         intl \
         zip \
         gd \
-        pdo_mysql \
         pdo_pgsql \
         bcmath \
         xml \
