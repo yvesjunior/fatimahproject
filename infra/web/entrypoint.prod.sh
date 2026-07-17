@@ -11,6 +11,9 @@ fi
 # Run migrations
 php artisan migrate --force
 
+# Seed baseline data (idempotent: admin user + gallery records with ImageKit URLs)
+php artisan db:seed --force
+
 # Cache configuration and routes for performance
 php artisan config:cache
 php artisan route:cache
