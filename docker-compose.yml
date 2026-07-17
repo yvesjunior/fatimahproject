@@ -14,7 +14,9 @@ services:
       - FORCE_HTTPS=true
       - SESSION_SECURE_COOKIE=true
       - SESSION_DOMAIN=${SESSION_DOMAIN}
-      # Production uses an external (managed/host) PostgreSQL — no DB container here.
+      # Default deploy file: connects to an EXTERNAL (managed/host) PostgreSQL —
+      # there is no DB container here. For local development with a bundled
+      # Postgres container, use `docker compose -f docker-compose.dev.yml`.
       # Set DB_HOST to the managed instance, or host.docker.internal when Postgres
       # runs on the host VM (host-gateway alias is provided below).
       - DB_CONNECTION=pgsql

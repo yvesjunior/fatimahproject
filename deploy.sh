@@ -115,8 +115,8 @@ echo "[3/3] Starting container..."
 echo "  Using external PostgreSQL at ${DB_HOST}:${DB_PORT} (db '${DB_NAME}')."
 echo "  Schema is created/updated automatically via 'php artisan migrate --force' on start."
 
-docker compose -f docker-compose.prod.yml down 2>/dev/null || true
-docker compose -f docker-compose.prod.yml up -d
+docker compose -f docker-compose.yml down 2>/dev/null || true
+docker compose -f docker-compose.yml up -d
 
 echo ""
 echo "  Waiting for services to be ready..."
@@ -134,4 +134,4 @@ echo ""
 echo "IMPORTANT: Change the admin password after first login!"
 echo ""
 echo "To check logs:  docker logs fatimaproject_prod"
-echo "To stop:        docker compose -f docker-compose.prod.yml down"
+echo "To stop:        docker compose -f docker-compose.yml down"
