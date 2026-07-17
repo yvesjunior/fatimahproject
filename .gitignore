@@ -11,3 +11,6 @@ src/web/data/database/database.sqlite
 # Database dumps / backups (contain data + password hashes)
 *.sql
 /backups/
+
+# Root docker-compose env (contains secrets — never commit)
+/.env

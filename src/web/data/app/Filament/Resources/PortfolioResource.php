@@ -4,15 +4,19 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\PortfolioResource\Pages;
 use App\Models\Portfolio;
+use App\Services\ImageKitService;
 use BackedEnum;
 use UnitEnum;
 use Filament\Actions;
 use Filament\Forms;
 use Filament\Resources\Resource;
+use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Storage;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 
 class PortfolioResource extends Resource
 {
@@ -31,10 +35,39 @@ class PortfolioResource extends Resource
             ->components([
                 Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->directory('portfolio')
                     ->required()
                     ->imageResizeMode('cover')
-                    ->imageCropAspectRatio('16:9'),
+                    ->imageCropAspectRatio('16:9')
+                    ->helperText('Uploaded to ImageKit CDN.')
+                    // Upload straight to ImageKit; store the CDN URL in `image`
+                    // and the ImageKit fileId in the hidden `image_file_id`.
+                    ->saveUploadedFileUsing(function (TemporaryUploadedFile $file, Set $set): ?string {
+                        $result = app(ImageKitService::class)->upload(
+                            $file->get(),
+                            $file->getClientOriginalName(),
+                        );
+                        $set('image_file_id', $result['fileId']);
+
+                        return $result['url'];
+                    })
+                    // Render the existing image for preview (ImageKit URL, legacy
+                    // static asset, or local storage).
+                    ->getUploadedFileUsing(function (string $file): ?array {
+                        if (str_starts_with($file, 'http://') || str_starts_with($file, 'https://')) {
+                            return ['name' => basename(parse_url($file, PHP_URL_PATH) ?: $file), 'url' => $file];
+                        }
+                        if (str_starts_with($file, 'portfolio/') && ! Storage::disk('public')->exists($file)) {
+                            return ['name' => basename($file), 'url' => asset('assets/img/' . $file)];
+                        }
+
+                        return ['name' => basename($file), 'url' => Storage::disk('public')->url($file)];
+                    })
+                    // Remove the file from ImageKit when cleared in the form.
+                    ->deleteUploadedFileUsing(function (?string $file, Get $get): void {
+                        app(ImageKitService::class)->delete($get('image_file_id'));
+                    }),
+
+                Forms\Components\Hidden::make('image_file_id'),
 
                 Forms\Components\Textarea::make('description')
                     ->rows(3)
@@ -57,12 +90,7 @@ class PortfolioResource extends Resource
                 Tables\Columns\ImageColumn::make('image')
                     ->height(120)
                     ->width(160)
-                    ->getStateUsing(function (Portfolio $record): string {
-                        if (str_starts_with($record->image, 'portfolio/') && !Storage::disk('public')->exists($record->image)) {
-                            return asset('assets/img/' . $record->image);
-                        }
-                        return asset('storage/' . $record->image);
-                    }),
+                    ->getStateUsing(fn (Portfolio $record): string => $record->image_url),
 
                 Tables\Columns\TextColumn::make('description')
                     ->limit(50)

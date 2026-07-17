@@ -25,6 +25,11 @@ APP_URL="http://localhost"
 SESSION_DOMAIN=""
 APP_SOURCE_PATH="$(cd "$(dirname "$0")" && pwd)"
 APP_KEY=""
+# ImageKit (gallery image hosting) — may also be provided via environment
+IMAGEKIT_PUBLIC_KEY="${IMAGEKIT_PUBLIC_KEY:-}"
+IMAGEKIT_PRIVATE_KEY="${IMAGEKIT_PRIVATE_KEY:-}"
+IMAGEKIT_URL_ENDPOINT="${IMAGEKIT_URL_ENDPOINT:-}"
+IMAGEKIT_FOLDER="${IMAGEKIT_FOLDER:-/portfolio}"
 
 # --- Parse arguments ---
 while [[ $# -gt 0 ]]; do
@@ -40,6 +45,10 @@ while [[ $# -gt 0 ]]; do
         --session-domain) SESSION_DOMAIN="$2"; shift 2;;
         --source-path) APP_SOURCE_PATH="$2"; shift 2;;
         --port) APP_PORT="$2"; shift 2;;
+        --imagekit-public-key) IMAGEKIT_PUBLIC_KEY="$2"; shift 2;;
+        --imagekit-private-key) IMAGEKIT_PRIVATE_KEY="$2"; shift 2;;
+        --imagekit-url-endpoint) IMAGEKIT_URL_ENDPOINT="$2"; shift 2;;
+        --imagekit-folder) IMAGEKIT_FOLDER="$2"; shift 2;;
         --load-image) LOAD_IMAGE=true; shift;;
         --help)
             echo "Usage: ./deploy.sh [OPTIONS]"
@@ -56,6 +65,10 @@ while [[ $# -gt 0 ]]; do
             echo "  --session-domain DOMAIN  Cookie domain (default: empty)"
             echo "  --source-path PATH       Repo path mounted into the container (default: script dir)"
             echo "  --port PORT              Web port (default: 80)"
+            echo "  --imagekit-public-key K  ImageKit public key (or set IMAGEKIT_PUBLIC_KEY env)"
+            echo "  --imagekit-private-key K ImageKit private key (or set IMAGEKIT_PRIVATE_KEY env)"
+            echo "  --imagekit-url-endpoint U ImageKit URL endpoint (or set IMAGEKIT_URL_ENDPOINT env)"
+            echo "  --imagekit-folder PATH   ImageKit folder (default: /portfolio)"
             echo "  --load-image             Load Docker image from fatimaproject-prod.tar.gz"
             echo ""
             echo "Examples:"
@@ -106,6 +119,11 @@ DB_DATABASE=${DB_NAME}
 DB_USERNAME=${DB_USER}
 DB_PASSWORD=${DB_PASS}
 DB_SSLMODE=${DB_SSLMODE}
+
+IMAGEKIT_PUBLIC_KEY=${IMAGEKIT_PUBLIC_KEY}
+IMAGEKIT_PRIVATE_KEY=${IMAGEKIT_PRIVATE_KEY}
+IMAGEKIT_URL_ENDPOINT=${IMAGEKIT_URL_ENDPOINT}
+IMAGEKIT_FOLDER=${IMAGEKIT_FOLDER}
 ENVFILE
 echo "  Done."
 

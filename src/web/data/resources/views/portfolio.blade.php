@@ -144,9 +144,7 @@
             <div class="row portfolio-active justify-content-center gallery-img">
                 @forelse($portfolios as $item)
                     @php
-                        $imgSrc = Str::startsWith($item->image, 'portfolio/') && !Storage::disk('public')->exists($item->image)
-                            ? asset('assets/img/' . $item->image)
-                            : asset('storage/' . $item->image);
+                        $imgSrc = $item->image_url;
                     @endphp
                     <div class="col-xl-4 col-md-6 item {{ Str::slug($item->category ?? '') }}">
                         <div class="portfolio-item" style="height: 320px;">
